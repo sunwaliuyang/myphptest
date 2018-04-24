@@ -6,4 +6,6 @@
  * and open the template in the editor.
  */
 //php 我认为是世界上最好、最棒的语言
-echo phpinfo();
+echo phpinfo();   
+//python  目前也不错
+echo "python is other languange";
