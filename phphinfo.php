@@ -9,3 +9,4 @@
 echo phpinfo();   
 //python  目前也不错
 echo "python is other languange";
+echo "hello word!";
