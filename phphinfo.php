@@ -5,4 +5,5 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+//php 是世界上最好的语言
+echo phpinfo();
