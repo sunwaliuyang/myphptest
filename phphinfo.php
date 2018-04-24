@@ -10,5 +10,5 @@ echo phpinfo();
 //python  目前也不错
 echo "python is other languange";
 echo "hello word!";
-echo "这是准备测试新增一行";
+echo "这是准备测试新增555一行";
 echo "git add后修改";
