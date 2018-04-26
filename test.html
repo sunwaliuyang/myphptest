@@ -1,1 +1,15 @@
-hello  word
+CREATE TABLE `t_bank_card_change_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键自增id',
+  `loan_no` varchar(20) NOT NULL COMMENT '贷款编号',
+  `customer_name` varchar(20) NOT NULL DEFAULT '' COMMENT '客户姓名',
+  `number` varchar(32) NOT NULL DEFAULT '' COMMENT '审批编号',
+  `ip` int(11) NOT NULL DEFAULT 0 COMMENT 'IP地址',
+  `before_data` text NOT NULL COMMENT '变更前数据',
+  `update_data` text NOT NULL COMMENT 'update数据',
+  `type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '变更类型 1银行卡信息、2手机号变更、3变更附件',
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_by` int(11) NOT NULL DEFAULT '0' COMMENT '创建人id',
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `update_by` int(11) NOT NULL DEFAULT '0' COMMENT '修改人id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='银行卡变更记录日志';
