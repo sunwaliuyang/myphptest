@@ -4,7 +4,7 @@ CREATE TABLE `t_bank_card_change_log` (
   `customer_name` varchar(20) NOT NULL DEFAULT '' COMMENT '客户姓名',
   `number` varchar(32) NOT NULL DEFAULT '' COMMENT '审批编号',
   `ip` int(11) NOT NULL DEFAULT 0 COMMENT 'IP地址',
-  `before_data` text NOT NULL COMMENT '变更前数据',
+  `before_data` text NOT NULL COMMENT '变更前数据master',
   `update_data` text NOT NULL COMMENT 'update数据',
   `type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '变更类型 1银行卡信息、2手机号变更、3变更附件',
   `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
@@ -13,3 +13,4 @@ CREATE TABLE `t_bank_card_change_log` (
   `update_by` int(11) NOT NULL DEFAULT '0' COMMENT '修改人id',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='银行卡变更记录日志';
+// 这些 是 mater版本的
